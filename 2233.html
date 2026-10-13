@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="我的个人自我介绍">
+  <title>我的个人介绍</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      color: #243047;
+      background: #f4f6fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 64px 24px;
+      background:
+        radial-gradient(circle at 12% 10%, #e4eaff 0, transparent 30%),
+        radial-gradient(circle at 90% 85%, #fce8e2 0, transparent 28%),
+        #f4f6fb;
+    }
+
+    main {
+      width: min(100%, 900px);
+      margin: 0 auto;
+    }
+
+    .intro {
+      margin-bottom: 36px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #6878b8;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 48px);
+      letter-spacing: 0.04em;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      color: #6c7485;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .profiles {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .card {
+      width: min(100%, 620px);
+      margin: 0 auto;
+      padding: 32px;
+      border: 1px solid rgba(225, 229, 240, 0.9);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 16px 40px rgba(45, 58, 92, 0.08);
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      height: 280px;
+      margin-bottom: 22px;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .role {
+      margin: 8px 0 18px;
+      color: #7a8292;
+      font-size: 14px;
+    }
+
+    .details {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .details li {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #f5f6fc;
+      color: #4f596c;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .details strong {
+      display: block;
+      margin-bottom: 2px;
+      color: #59688f;
+      font-size: 13px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #f0f2fb;
+      color: #59688f;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: #8a91a0;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 620px) {
+      body {
+        padding: 44px 18px;
+      }
+
+      .card {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">Nice to meet you</p>
+      <h1>我的个人介绍</h1>
+      <p class="subtitle">你好！欢迎认识我，下面是我的个人介绍。</p>
+    </header>
+
+    <section aria-label="我的自我介绍">
+      <ul class="profiles">
+        <li class="card">
+          <img class="portrait" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="个人介绍配图，可替换成自己的照片">
+          <h2>我</h2>
+          <p class="role">认真生活，持续进步</p>
+          <ul class="details" aria-label="个人资料">
+            <li><strong>姓名</strong>请把这里改成你的姓名或昵称。</li>
+            <li><strong>来自哪里</strong>请填写你的家乡或居住地。</li>
+            <li><strong>性格特点</strong>请写下你的性格，例如开朗、认真或友善。</li>
+            <li><strong>兴趣爱好</strong>请写下你喜欢做的事情，例如运动、阅读或听音乐。</li>
+            <li><strong>擅长的事</strong>请介绍你擅长的技能或科目。</li>
+            <li><strong>我的目标</strong>请写下你现在的目标或未来的梦想。</li>
+            <li><strong>想对大家说</strong>很高兴认识大家，希望我们能一起学习、共同进步！</li>
+          </ul>
+          <ul class="tags" aria-label="我的关键词">
+            <li class="tag">兴趣</li>
+            <li class="tag">学习</li>
+            <li class="tag">梦想</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer>感谢阅读我的介绍！</footer>
+  </main>
+</body>
+</html>
